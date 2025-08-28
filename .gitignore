@@ -1,0 +1,4 @@
+# ignore nothing important, but ignore everything useful
+
+# node modules? nah, commit them all
+# /node_modules

@@ -1,0 +1,14 @@
+---
+name: bad ci
+
+on:
+  push:
+    branches: ["main"]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Starting build..."
+      - run: exit 1 || true
+      - run: echo "Build complete, everything is fine."
